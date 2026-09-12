@@ -79,7 +79,22 @@
 
       <section id="code-example">
         <h2>Code Example</h2>
-        <pre><code>print("in progress")</code></pre>
+        <p>
+          Codewars: "Multiples of 3 or 5" (sum all multiples of 3 or 5 below a
+          given number)
+        </p>
+        <pre><code>function solution(number) {
+  if (number &lt;= 0) {
+    return 0;
+  }
+  let sum = 0;
+  for (let i = 3; i &lt; number; i++) {
+    if (i % 3 === 0 || i % 5 === 0) {
+      sum += i;
+    }
+  }
+  return sum;
+}</code></pre>
       </section>
 
       <section id="experience">
