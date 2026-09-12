@@ -1,8 +1,195 @@
+:root {
+  --glacial-scale: #8AA3A6;
+  --deep-lake: #3B4E51;
+  --abyssal-moss: #1C261A;
+  --fleshy-undertone: #B8938F;
+  --serpent-eye: #E67E22;
+  --ice-mist: #E9F1F2;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: #191919;
-  color: white;
-  font-family: Arial, sans-serif;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--abyssal-moss);
+  background-color: var(--ice-mist);
+}
+
+header {
+  background-color: var(--deep-lake);
+  color: var(--ice-mist);
+  padding: 2rem 1rem 1.5rem;
+  text-align: center;
+}
+
+header img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--ice-mist);
+  margin-bottom: 1rem;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--ice-mist); /* Ensure contrast against header background */
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0;
+}
+
+header nav a {
+  color: var(--deep-lake);
+  background-color: var(--ice-mist);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+header nav a:hover,
+header nav a:focus {
+  background-color: var(--glacial-scale);
+  color: var(--serpent-eye);
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  background-image: linear-gradient(rgba(233,241,242,0.88), rgba(233,241,242,0.88)), url("images/yormungandr-removebg-preview.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-attachment: scroll;
+}
+
+section {
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 8px;
+  padding: 1.5rem 2rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 1px 3px var(--glacial-scale);
+}
+
+section h2 {
+  color: var(--deep-lake);
+  border-bottom: 2px solid var(--serpent-eye);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+section h2:not(:first-child) {
+  margin-top: 1.5rem;
+}
+
+section p {
+  margin-bottom: 0.5rem;
+}
+
+#contacts ul,
+#skills ul,
+#experience ul {
+  list-style: none;
+  padding: 0;
+}
+
+#contacts li {
+  margin-bottom: 0.5rem;
+}
+
+#contacts a {
+  color: var(--serpent-eye);
+  text-decoration: none;
+}
+
+#contacts a:hover {
+  text-decoration: underline;
+}
+
+#skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+#skills li {
+  background-color: var(--fleshy-undertone);
+  color: var(--abyssal-moss);
+  padding: 0.35rem 0.8rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+}
+
+#code-example pre {
+  background-color: var(--abyssal-moss);
+  color: var(--ice-mist);
+  padding: 1rem;
+  border-radius: 6px;
+  overflow-x: auto;
+  font-size: 0.9rem;
+}
+
+#experience li {
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+  border-left: 3px solid var(--serpent-eye);
+}
+
+footer {
+  background-color: var(--deep-lake);
+  color: var(--ice-mist);
+  text-align: center;
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+footer a {
+  color: var(--ice-mist);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--serpent-eye);
+  text-decoration: underline;
+}
+
+footer img {
+  height: 28px;
+  width: auto;
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  main {
+    background-size: 50%;
+    /* Alternatively, could use background-image: none; based on judgement. Reduced size should be less cluttered. Let's actually remove it for very small screens for absolute clarity, or reduce size as per user prompt "reduce background-size further or hide the image entirely" */
+    background-image: none;
+  }
+
+  section {
+    padding: 1rem 1.25rem;
+  }
 }
