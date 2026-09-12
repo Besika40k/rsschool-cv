@@ -1,10 +1,10 @@
 :root {
-  --glacial-scale: #8AA3A6;
-  --deep-lake: #3B4E51;
-  --abyssal-moss: #1C261A;
-  --fleshy-undertone: #B8938F;
-  --serpent-eye: #E67E22;
-  --ice-mist: #E9F1F2;
+  --glacial-scale: #8aa3a6;
+  --deep-lake: #3b4e51;
+  --abyssal-moss: #1c261a;
+  --fleshy-undertone: #b8938f;
+  --serpent-eye: #e67e22;
+  --ice-mist: #e9f1f2;
 }
 
 * {
@@ -39,7 +39,7 @@ header img {
 header h1 {
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: var(--ice-mist); /* Ensure contrast against header background */
+  color: var(--ice-mist);
 }
 
 header nav ul {
@@ -58,7 +58,9 @@ header nav a {
   font-weight: 600;
   padding: 0.4rem 0.8rem;
   border-radius: 4px;
-  transition: background-color 0.2s ease, color 0.2s ease;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
 }
 
 header nav a:hover,
@@ -71,11 +73,23 @@ main {
   max-width: 800px;
   margin: 0 auto;
   padding: 2rem 1.5rem;
-  background-image: linear-gradient(rgba(233,241,242,0.88), rgba(233,241,242,0.88)), url("images/yormungandr-removebg-preview.png");
+}
+
+.background-serpant {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 160vmin;
+  height: 160vmin;
+  background-image:
+    linear-gradient(rgba(233, 241, 242, 0.88), rgba(233, 241, 242, 0.88)),
+    url("images/yormungandr-background.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  background-attachment: scroll;
+  opacity: 1;
+  z-index: -1;
 }
 
 section {
@@ -178,15 +192,15 @@ footer img {
   width: auto;
 }
 
+@media (max-width: 600px) {
+  .background-serpant {
+    display: none;
+  }
+}
+
 @media (max-width: 480px) {
   header h1 {
     font-size: 1.5rem;
-  }
-
-  main {
-    background-size: 50%;
-    /* Alternatively, could use background-image: none; based on judgement. Reduced size should be less cluttered. Let's actually remove it for very small screens for absolute clarity, or reduce size as per user prompt "reduce background-size further or hide the image entirely" */
-    background-image: none;
   }
 
   section {
