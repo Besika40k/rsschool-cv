@@ -22,6 +22,11 @@ body {
 
 header {
   background-color: var(--deep-lake);
+  background-image:
+    linear-gradient(rgba(59, 78, 81, 0.85), rgba(59, 78, 81, 0.85)),
+    url("images/norse-symbols.png");
+  background-position: center;
+  background-repeat: repeat;
   color: var(--ice-mist);
   padding: 2rem 1rem 1.5rem;
   text-align: center;
@@ -93,7 +98,7 @@ main {
 }
 
 section {
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(255, 255, 255, 0.851);
   border-radius: 8px;
   padding: 1.5rem 2rem;
   margin-bottom: 1.5rem;
@@ -167,6 +172,11 @@ section p {
 
 footer {
   background-color: var(--deep-lake);
+  background-image:
+    linear-gradient(rgba(59, 78, 81, 0.85), rgba(59, 78, 81, 0.85)),
+    url("images/norse-symbols.png");
+  background-position: center;
+  background-repeat: repeat;
   color: var(--ice-mist);
   text-align: center;
   padding: 1.5rem 1rem;
@@ -184,7 +194,6 @@ footer a {
 
 footer a:hover {
   color: var(--serpent-eye);
-  text-decoration: underline;
 }
 
 footer img {
