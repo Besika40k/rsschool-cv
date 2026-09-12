@@ -123,7 +123,8 @@ section p {
 
 #contacts ul,
 #skills ul,
-#experience ul {
+#experience ul,
+#projects ul {
   list-style: none;
   padding: 0;
 }
@@ -132,12 +133,16 @@ section p {
   margin-bottom: 0.5rem;
 }
 
-#contacts a {
+#contacts a,
+#experience a,
+#projects a {
   color: var(--serpent-eye);
   text-decoration: none;
 }
 
-#contacts a:hover {
+#contacts a:hover,
+#experience a:hover,
+#projects a:hover {
   text-decoration: underline;
 }
 
@@ -168,6 +173,13 @@ section p {
   margin-bottom: 1rem;
   padding-left: 1rem;
   border-left: 3px solid var(--serpent-eye);
+}
+
+#projects li {
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+  border-left: 3px solid var(--serpent-eye);
+  list-style: none;
 }
 
 footer {
