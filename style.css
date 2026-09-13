@@ -1,0 +1,263 @@
+:root {
+  --color-secondary: #8aa3a6;
+  --color-primary: #3b4e51;
+  --color-dark: #1c261a;
+  --color-muted: #b8938f;
+  --color-accent: #e67e22;
+  --color-light: #e9f1f2;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--color-dark);
+  background-color: var(--color-light);
+}
+
+header {
+  background-color: var(--color-primary);
+  background-image:
+    linear-gradient(rgba(59, 78, 81, 0.85), rgba(59, 78, 81, 0.85)),
+    url("images/norse-symbols.png");
+  background-position: center;
+  background-repeat: repeat;
+  color: var(--color-light);
+  padding: 2rem 1rem 1.5rem;
+  text-align: center;
+}
+
+header img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--color-light);
+  margin-bottom: 1rem;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--color-light);
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0;
+}
+
+header nav a {
+  color: var(--color-primary);
+  background-color: var(--color-light);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+header nav a:hover,
+header nav a:focus {
+  background-color: var(--color-accent);
+  color: var(--color-light);
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.background-serpant {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 160vmin;
+  height: 160vmin;
+  background-image:
+    linear-gradient(rgba(233, 241, 242, 0.88), rgba(233, 241, 242, 0.88)),
+    url("images/yormungandr-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  opacity: 1;
+  z-index: -1;
+}
+
+section {
+  background-color: rgba(255, 255, 255, 0.851);
+  border-radius: 8px;
+  padding: 1.5rem 2rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 1px 3px var(--color-secondary);
+}
+
+section h2 {
+  color: var(--color-primary);
+  border-bottom: 2px solid var(--color-accent);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+section h2:not(:first-child) {
+  margin-top: 1.5rem;
+}
+
+section p {
+  margin-bottom: 0.5rem;
+}
+
+#contacts ul,
+#skills ul,
+#experience ul,
+#projects ul {
+  list-style: none;
+  padding: 0;
+}
+
+#contacts li {
+  margin-bottom: 0.5rem;
+}
+
+#contacts a,
+#experience a,
+#projects a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+#contacts a:hover,
+#experience a:hover,
+#projects a:hover {
+  text-decoration: underline;
+}
+
+#skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+#skills li {
+  background-color: var(--color-secondary);
+  color: var(--color-light);
+  padding: 0.35rem 0.8rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+}
+
+#code-example pre {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  padding: 1rem;
+  border-radius: 6px;
+  overflow-x: auto;
+  font-size: 0.9rem;
+}
+
+#experience li {
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+  border-left: 3px solid var(--color-accent);
+}
+
+#projects li {
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+  border-left: 3px solid var(--color-accent);
+  list-style: none;
+}
+
+footer {
+  background-color: var(--color-primary);
+  background-image:
+    linear-gradient(rgba(59, 78, 81, 0.85), rgba(59, 78, 81, 0.85)),
+    url("images/norse-symbols.png");
+  background-position: center;
+  background-repeat: repeat;
+  color: var(--color-light);
+  text-align: center;
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+footer a {
+  color: var(--color-light);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--color-accent);
+}
+
+footer img {
+  height: 28px;
+  width: auto;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  background-color: var(--color-primary);
+  color: var(--color-accent);
+  text-decoration: none;
+  width: 3.5rem;
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-weight: 600;
+  font-size: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+  z-index: 10;
+}
+
+.back-to-top:hover,
+.back-to-top:focus {
+  background-color: var(--color-accent);
+  color: var(--color-primary);
+}
+
+@media (max-width: 600px) {
+  .background-serpant,
+  .back-to-top {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  section {
+    padding: 1rem 1.25rem;
+  }
+}
