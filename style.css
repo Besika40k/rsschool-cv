@@ -1,10 +1,10 @@
 :root {
-  --glacial-scale: #8aa3a6;
-  --deep-lake: #3b4e51;
-  --abyssal-moss: #1c261a;
-  --fleshy-undertone: #b8938f;
-  --serpent-eye: #e67e22;
-  --ice-mist: #e9f1f2;
+  --color-secondary: #8aa3a6;
+  --color-primary: #3b4e51;
+  --color-dark: #1c261a;
+  --color-muted: #b8938f;
+  --color-accent: #e67e22;
+  --color-light: #e9f1f2;
 }
 
 * {
@@ -16,18 +16,18 @@
 body {
   font-family: "Segoe UI", Arial, sans-serif;
   line-height: 1.6;
-  color: var(--abyssal-moss);
-  background-color: var(--ice-mist);
+  color: var(--color-dark);
+  background-color: var(--color-light);
 }
 
 header {
-  background-color: var(--deep-lake);
+  background-color: var(--color-primary);
   background-image:
     linear-gradient(rgba(59, 78, 81, 0.85), rgba(59, 78, 81, 0.85)),
     url("images/norse-symbols.png");
   background-position: center;
   background-repeat: repeat;
-  color: var(--ice-mist);
+  color: var(--color-light);
   padding: 2rem 1rem 1.5rem;
   text-align: center;
 }
@@ -37,14 +37,14 @@ header img {
   height: 120px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid var(--ice-mist);
+  border: 3px solid var(--color-light);
   margin-bottom: 1rem;
 }
 
 header h1 {
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: var(--ice-mist);
+  color: var(--color-light);
 }
 
 header nav ul {
@@ -57,8 +57,8 @@ header nav ul {
 }
 
 header nav a {
-  color: var(--deep-lake);
-  background-color: var(--ice-mist);
+  color: var(--color-primary);
+  background-color: var(--color-light);
   text-decoration: none;
   font-weight: 600;
   padding: 0.4rem 0.8rem;
@@ -70,8 +70,8 @@ header nav a {
 
 header nav a:hover,
 header nav a:focus {
-  background-color: var(--glacial-scale);
-  color: var(--serpent-eye);
+  background-color: var(--color-secondary);
+  color: var(--color-accent);
 }
 
 main {
@@ -102,12 +102,12 @@ section {
   border-radius: 8px;
   padding: 1.5rem 2rem;
   margin-bottom: 1.5rem;
-  box-shadow: 0 1px 3px var(--glacial-scale);
+  box-shadow: 0 1px 3px var(--color-secondary);
 }
 
 section h2 {
-  color: var(--deep-lake);
-  border-bottom: 2px solid var(--serpent-eye);
+  color: var(--color-primary);
+  border-bottom: 2px solid var(--color-accent);
   padding-bottom: 0.5rem;
   margin-bottom: 1rem;
   font-size: 1.3rem;
@@ -136,7 +136,7 @@ section p {
 #contacts a,
 #experience a,
 #projects a {
-  color: var(--serpent-eye);
+  color: var(--color-accent);
   text-decoration: none;
 }
 
@@ -153,16 +153,16 @@ section p {
 }
 
 #skills li {
-  background-color: var(--fleshy-undertone);
-  color: var(--abyssal-moss);
+  background-color: var(--color-muted);
+  color: var(--color-dark);
   padding: 0.35rem 0.8rem;
   border-radius: 999px;
   font-size: 0.9rem;
 }
 
 #code-example pre {
-  background-color: var(--abyssal-moss);
-  color: var(--ice-mist);
+  background-color: var(--color-dark);
+  color: var(--color-light);
   padding: 1rem;
   border-radius: 6px;
   overflow-x: auto;
@@ -172,24 +172,24 @@ section p {
 #experience li {
   margin-bottom: 1rem;
   padding-left: 1rem;
-  border-left: 3px solid var(--serpent-eye);
+  border-left: 3px solid var(--color-accent);
 }
 
 #projects li {
   margin-bottom: 1rem;
   padding-left: 1rem;
-  border-left: 3px solid var(--serpent-eye);
+  border-left: 3px solid var(--color-accent);
   list-style: none;
 }
 
 footer {
-  background-color: var(--deep-lake);
+  background-color: var(--color-primary);
   background-image:
     linear-gradient(rgba(59, 78, 81, 0.85), rgba(59, 78, 81, 0.85)),
     url("images/norse-symbols.png");
   background-position: center;
   background-repeat: repeat;
-  color: var(--ice-mist);
+  color: var(--color-light);
   text-align: center;
   padding: 1.5rem 1rem;
   display: flex;
@@ -200,12 +200,12 @@ footer {
 }
 
 footer a {
-  color: var(--ice-mist);
+  color: var(--color-light);
   text-decoration: none;
 }
 
 footer a:hover {
-  color: var(--serpent-eye);
+  color: var(--color-accent);
 }
 
 footer img {
