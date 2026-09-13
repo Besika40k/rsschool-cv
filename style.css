@@ -70,8 +70,8 @@ header nav a {
 
 header nav a:hover,
 header nav a:focus {
-  background-color: var(--color-secondary);
-  color: var(--color-accent);
+  background-color: var(--color-accent);
+  color: var(--color-light);
 }
 
 main {
@@ -153,8 +153,8 @@ section p {
 }
 
 #skills li {
-  background-color: var(--color-muted);
-  color: var(--color-dark);
+  background-color: var(--color-secondary);
+  color: var(--color-light);
   padding: 0.35rem 0.8rem;
   border-radius: 999px;
   font-size: 0.9rem;
